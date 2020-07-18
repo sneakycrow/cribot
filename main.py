@@ -1,4 +1,5 @@
 import discord
+import os
 
 client = discord.Client()
 
@@ -11,7 +12,7 @@ async def on_message(message):
 	if message.author == client.user:
 		return
 
-	if message.content.startswith('$hello'):
-		await message.channel.send('Hello!')
+	if message.content.startswith('hi cribot'):
+		await message.channel.send('leave me alone im not ready yet')
 
-client.run('NzMzOTE0NjE4MTA3MjY1MDU1.XxKFWQ.WxLaqIx6YhdDc8CbTYL1wAwEjJk')
+client.run(os.environ.get('DISCORD_TOKEN'))
