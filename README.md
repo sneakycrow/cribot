@@ -25,8 +25,8 @@ export DISCORD_TOKEN=token
 Virtual environment (optional)
 ```sh
 python -m pip install venv
-python -m venv bot-env
-source bot-env/bin/activate
+python -m venv cribot-env
+source cribot-env/bin/activate
 ```
 Install dependencies
 ```sh
